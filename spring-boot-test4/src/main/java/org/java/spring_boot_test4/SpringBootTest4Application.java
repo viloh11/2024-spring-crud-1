@@ -23,7 +23,7 @@ public class SpringBootTest4Application implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		try{
-			ContoBancario c1 = new ContoBancario(-100);
+			ContoBancario c1 = new ContoBancario(0);
 			c1.getDeposito(100);
 			System.out.println(c1);
 			ContoBancario c2 = new ContoBancario(0);
