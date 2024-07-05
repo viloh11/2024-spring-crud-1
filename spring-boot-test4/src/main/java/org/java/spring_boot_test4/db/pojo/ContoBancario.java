@@ -34,6 +34,9 @@ public class ContoBancario {
     }
 
     public void setSaldo(int saldo) {
+        if(saldo == 0 || saldo < 0){
+            throw new IllegalArgumentException("Saldo non valido");
+        }
         this.saldo = saldo;
     }
 
